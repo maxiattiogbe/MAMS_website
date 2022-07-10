@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+		<title>My Personal Web Page</title>
+<link href="mystylesheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<nav>
+<div class="navbar">
+<a href="index.html"> Home </a>
+<a href="Bio.html"> Bio </a>
+<a href="Hobbies.html"> Hobbies </a>
+  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()">Academics
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+			  <div class="dropdown-content" id="myDropdown">
+			    <a href="CS.html"> CS </a>
+				<a href="Hum.html"> Hum </a>
+				<a href="Lang.html"> Lang </a>
+				<a href="Math.html"> Math </a>
+				<a href="Physics.html"> Physics </a>
+				<a href="STEM_I.html"> STEM I</a>
+				<a href="STEM_II.html"> STEM II</a>
+				<a href="STW.html"> STW </a>
+			  </div>
+  </div>
+  <a href="Volunteering-Community-Service.html"> Volunteering/Community Service </a>
+<a href="Extracurriculars.html"> Extracurriculars </a> 
+</div>
+</nav>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id = "wrapper"> 
+<h1> Computer Science </h1>
+</div>
+
+<div id="wrapper2">
+<p>
+       This class is taught by Mrs. Tarrico. We begin the year by learning HTML and CSS we then use to design personal websites like this one. Our websites are supposed to function as our own personal and professional electronic portfolios. We had access to online resources such as W3Schools to help us with the website development. 
+       
+</p>
+
+<p>
+        Next, we learned fundamental concepts of the object-oriented programming language Java. The concepts we have learned so far include primitive data types, if and else statements, loops, boolean algebra, arrays, arraylists, implementing classes, and static methods. Next we are going to cover inheritance. Each unit starts with notes followed by exercises and usually also a lab or two.
+ </p>
+ 
+ <p>
+        In this class we write our Java, HTML, and CSS in the Eclipse integrated development
+    environment (IDE). 
+</p>
+
+<p>
+This assignment below is the Line Art lab from the unit on loops. We had to use loops and coordinate geometry to make this design entirely from straight lines. The program utilizes Java’s Applet class to display the result. In Java, a class is a collection of code that often allows you to construct what is called an object. That object usually has certain attributes that can be access or manipulated based on instruction in the class. The PDF file below contains the code I wrote for the program while the picture displays the output of the program. 
+
+
+</p>
+<div id = "wrapper3"> 
+<embed src="Docs/LineArt.pdf" alt="Line Art" width = 100%/>
+</div>	
+
+<div id = "wrapper4"> 
+<img src="Images/LineArt.png" alt="Line Art" width = 100%/>
+</div>	
+
+<p>
+The assignment below is the Stars exercise from the unit on arrays. I had to store the coordinates of the vertices of a star in two arrays (one for the x coordinates and one for the y coordinates) and then use a loop and the Random class to display various stars of random sizes in random locations using the Applet class. As an extension I constructed an object of the Color class and randomly assigned it red, green, and blue values to give each star a random color. 
+
+</p>
+<div id = "wrapper4"> 
+<embed src="Docs/Stars.pdf" alt="Stars" width = 100%/>
+</div>	
+
+<div id = "wrapper3"> 
+<img src="Images/Stars.png" alt="Stars" width = 100%/>
+</div>	
+
+
+</div>
+<div id = "wrapper5">
+<h2>Apps for Good</h2>
+</div>
+<div id = "wrapper2">
+<p>
+This term we are starting to work in teams of three or four to develop a mobile app for the Apps for Good program. 
+I am in a group of three with Bao Han and Anaya. 
+</p>
+
+<p>
+Come back in May for more content!
+</p>
+
+
+</div>
+<!-- I made this website with the help of https://www.w3schools.com/html/default.asp -->
+</body>
+</html>

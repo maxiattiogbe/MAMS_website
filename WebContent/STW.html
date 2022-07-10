@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+		<title>My Personal Web Page</title>
+<link href="mystylesheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<nav>
+<div class="navbar">
+<a href="index.html"> Home </a>
+<a href="Bio.html"> Bio </a>
+<a href="Hobbies.html"> Hobbies </a>
+  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()">Academics
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+			  <div class="dropdown-content" id="myDropdown">
+			    <a href="CS.html"> CS </a>
+				<a href="Hum.html"> Hum </a>
+				<a href="Lang.html"> Lang </a>
+				<a href="Math.html"> Math </a>
+				<a href="Physics.html"> Physics </a>
+				<a href="STEM_I.html"> STEM I</a>
+				<a href="STEM_II.html"> STEM II</a>
+				<a href="STW.html"> STW </a>
+			  </div>
+  </div>
+  <a href="Volunteering-Community-Service.html"> Volunteering/Community Service </a>
+<a href="Extracurriculars.html"> Extracurriculars </a> 
+</div>
+</nav>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id = "wrapper">
+<h1> Science and </h1>
+<h1>Technical Writing </h1>
+</div>
+
+<div id = "wrapper5">
+<h2> Overview </h2>
+</div>
+<div id = "wrapper2">
+<p>
+This class is also taught by Dr. Crowthers. We begin the year reading research articles in various STEM fields. Then we transition to reading articles directly related to our STEM Projects. We cover what makes good scientific writing. We cover how to paraphrase, cite sources, and avoid plagiarism. We also covered some basic statistics and then more advanced statistical tests we will use  to analyze and form conclusions from our STEM I project data. 
+</p>
+</div>
+
+<div id = "wrapper5">
+<h2> Project Brief/Research Plan PDF </h2>
+</div>
+<div id = "wrapper2">
+<p>
+This is from the long initial research and planning phase of our STEM I projects. We spent weeks building up this document from a template Dr. Crowthers shared with the class. After we make accounts on the Massachusetts Science and Engineering Fair (MSSEF) website, we submit many sections of this document through the Science and Engineering Fair Online System (SEFOS) to have our project approves before we can begin collecting experimental data.  
+</p>
+</div>
+<div id = "wrapper3">
+<iframe src="Docs/STEM_I_Page-Project_Proposal.pdf" alt="Attiogbe, Maxim - 2019-2020 STEM1 Project Proposal" width = 100%></iframe>
+</div>
+
+
+
+
+<div id = "wrapper5">
+<h2> Literature Review </h2>
+</div>
+
+
+
+<div>
+<div id = "wrapper2">
+<p>
+ In this text, we reference sources we have read and taken notes on (see the Project Notes section below). It should be self-sufficient; however, it becomes one of the first parts of a larger document that will be our STEM thesis. It puts together research we have done to fill knowledge gaps and deepen understanding necessary to successfully complete our projects. 
+</p>
+</div>
+<div id = "wrapper4">
+<iframe src="Docs/STEM_I_Page-Lit_Review.pdf" alt="Literature Review" width = 100%></iframe>
+</div>
+</div>
+
+
+<div id = "wrapper5" >
+<h2> Project Notes </h2>
+</div>
+
+<div id = "wrapper2">
+<p>
+The purpose of this document is to help us keep track of all of the articles we read for our projects in an organized way. Furthermore, it helps us have a place to keep all of our research notes. Additionally, it helps us quickly find sources we have read previously especially if the sources are online. 
+</p>
+</div>
+<div id = "wrapper3">
+<iframe src="Docs/STEM_I_Page-Project_Notes.pdf" alt="Project Notes" width = 100%></iframe>
+</div>
+
+
+
+<div id = "wrapper5">
+<h2>Stats Presentation </h2>
+</div>
+<div id = "wrapper2">
+<p>
+As mentioned in the overview, we cover some basic statistics in this course (e.g. mean and standard deviation) as well as some more advanced statistical tests. We were broken up into groups and each group had to choose a different statistical test to research and give a presentation about to the class. As part of the presentation we had to include an infographic about when and how to perform the test. My group consisted of Darshan, Daanish, and me. We chose the chi-squared test. Our presentation is in the PDF file below. 
+</p>
+</div>
+<div id = "wrapper4">
+<iframe src="Docs/Chi-Squared Test.pdf" alt="Chi-Squared Test" width = 100%></iframe>
+</div>
+
+<!-- I made this website with the help of https://www.w3schools.com/html/default.asp -->
+</body>
+</html>
