@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+		<title>My Personal Web Page</title>
+<link href="mystylesheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+<nav>
+<div class="navbar">
+<a href="index.html"> Home </a>
+<a href="Bio.html"> Bio </a>
+<a href="Hobbies.html"> Hobbies </a>
+  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()">Academics
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+			  <div class="dropdown-content" id="myDropdown">
+			    <a href="CS.html"> CS </a>
+				<a href="Hum.html"> Hum </a>
+				<a href="Lang.html"> Lang </a>
+				<a href="Math.html"> Math </a>
+				<a href="Physics.html"> Physics </a>
+				<a href="STEM_I.html"> STEM I</a>
+				<a href="STEM_II.html"> STEM II</a>
+				<a href="STW.html"> STW </a>
+			  </div>
+  </div>
+  <a href="Volunteering-Community-Service.html"> Volunteering/Community Service </a>
+<a href="Extracurriculars.html"> Extracurriculars </a> 
+</div>
+</nav>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id = "wrapper"> 
+<h1> Hobbies </h1>
+</div>
+
+
+
+<div id="wrapper2">
+<div id="wrapper3">
+<img src="Images/flute.jpg" alt="flute" width = 25%/>
+<img src="Images/karate.png" alt="flute" width = 20%/>
+<img src="Images/tenacity.jpg" alt="tenacity" width = 25%/>
+<img src="Images/worcester-fitness.jpg" alt="worcester fitness" width = 25%/>
+<img src="Images/ywca.jpg" alt="ywca" width = 25%/>
+<img src="Images/ymca.jpg" alt="ymca" width = 25%/>
+</div>
+
+<p>
+  I like to play flute. I have played for school from 6th grade to 9th grade.
+  I enjoy it very much because it is often relaxing. I still play occasionally when
+  I have time to.  I took Martial Arts Lessons at Kenpo Academy (karate) from 2nd grade to 
+  6th grade. I also participated in the Skyhawk Summer Sports Camps 
+  (to play baseball, basketball, and soccer) in elementary school
+   I also enjoy to playing tennis and swimming. I played tennis at
+  Tenacity for several years in elementary school. More recently, I played on the 
+  South High Community School tennis team last year in 10th grade. I started swimming
+  lessons at Worcester Fitness in 2nd grade then eventually took swimming lessons at 
+  the YWCA at 1 Salem Street. I finished the swimming lessons, and I still enjoy swimming
+  today. In fact, I swim with my brother every Sunday. We used to swim at YWCA, but now
+  we swim at the YMCA at 75 Shore Drive, Worcester, MA
+<div id="wrapper4">
+<img src="Images/chess.jpg" alt="chess" width = 30%/>
+<img src="Images/Checkers-Set.jpg" alt="checkers" width = 30%/>
+<img src="Images/junior-monopoly.jpg" alt="monopoly" width = 30%/>
+</div>
+<p>
+I also enjoy playing board games like chess, checkers, and monopoly with my younger brother. 
+</p>
+<div id="wrapper3">
+<img src="Images/arduino-UNO.bcc69bde.png" alt="arduino" width = 22%/>
+<img src="Images/python.png" alt="python programming" width = 22%/>
+<img src="Images/rover.jpg" alt="toy rover" width = 22%/>
+<img src="Images/owi-14-1-educational-solar-kit-14-large.jpg" alt="14 in 1 solar robot" width = 22%/>
+</div>
+<p>
+My brother and I have also programmed an Arduino (C programming), done coding in the Python
+programming language), and programmed a toy rover. We also have a solar robot kit that has 
+a manual on how to make 14 configurations of parts for the solar robot. 
+</p>
+<div id="wrapper4">
+<img src="Images/Bute_Park,_Cardiff.jpg" alt="park" width = 30%/>
+<img src="Images/Stack of books-296597.png" alt="books" width = 30%/>
+<img src="Images/116751026-the-worcester-public-library-in-worcester-massachusetts.jpg" alt="Worcester Public Library" width = 30%/>
+</div>
+<p>
+I also enjoy walking in the park and reading. In elementary school, I read lots of
+ books from the Worcester Public Library
+</p>
+</div>
+<!-- I made this website with the help of https://www.w3schools.com/html/default.asp -->
+</body>
+</html>

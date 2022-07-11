@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="UTF-8">
+		<title>My Personal Web Page</title>
+<link href="mystylesheet.css" rel="stylesheet" type="text/css" />
+
+<body>
+<nav>
+<div class="navbar">
+<a href="index.html"> Home </a>
+<a href="Bio.html"> Bio </a>
+<a href="Hobbies.html"> Hobbies </a>
+  <div class="dropdown">
+	  <button class="dropbtn" onclick="myFunction()">Academics
+	    <i class="fa fa-caret-down"></i>
+	  </button>
+			  <div class="dropdown-content" id="myDropdown">
+			    <a href="CS.html"> CS </a>
+				<a href="Hum.html"> Hum </a>
+				<a href="Lang.html"> Lang </a>
+				<a href="Math.html"> Math </a>
+				<a href="Physics.html"> Physics </a>
+				<a href="STEM_I.html"> STEM I</a>
+				<a href="STEM_II.html"> STEM II</a>
+				<a href="STW.html"> STW </a>
+			  </div>
+  </div>
+  <a href="Volunteering-Community-Service.html"> Volunteering/Community Service </a>
+<a href="Extracurriculars.html"> Extracurriculars </a> 
+</div>
+</nav>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id = "wrapper">
+<h1> Humanities </h1>
+</div>
+
+<div id="wrapper2">
+
+<p>
+
+This class is taught by Ms. Small. It is simultaneously and English class and a History class. So far we have covered a vast timespan of human history from the time when humans societies began to form up until the Los Angeles race riots. We covered a variety of texts and analyzed them not only for their historical meaning, but also aspects you would expect to analyze in a traditional English class such as rhetoric. In class discussions are an especially useful component of this class not only for better comprehension of texts and exposure to new perspectives, but also for ideas for essays.
+
+</p>
+
+<p>
+The book incoming juniors must read for the assigned summer reading for Humanities is Walden Pond
+ by Henry David Thoreau. We had to write a journal for most of the chapters as the summer assignment. 
+ In the first weeks of school, we discussed the book and started working in assigned groups on short
+  about five to ten minute plays or skits related to the book in some way. My group decided to make a 
+  skit exploring what would happen if Thoreau found himself in modern times. See the pdf below for the
+   full script. 
+
+</p>
+<div id = "wrapper3"> 
+<embed src="Docs/Thoreau Play Draft 2.pdf" alt="Thoreau Play Draft 2" width = 100%/>
+</div>
+<p>
+This assignment below is an essay I did at the beginning of the year for which I had to compare the effectiveness of two short stories by Ray Bradbuy.  The two texts were assigned  as reading homework for the course. They were followed by in class discussions from which I took notes I used to find inspiration for the essay in the PDF file below. 
+
+</p>
+<div id = "wrapper4"> 
+<embed src="Docs/Revised Final Draft of Bradbury Essay.pdf" alt="Revised Final Draft of Bradbury Essay" width = 100%/>
+</div>
+</div>
+<!-- I made this website with the help of https://www.w3schools.com/html/default.asp -->
+</body>
+</html>
